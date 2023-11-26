@@ -43,7 +43,7 @@ except URLError as e:
 # don't run anything past here while we troubleshoot
 streamlit.stop()
   
-  streamlit.write('The user entered ', fruit_choice)
+streamlit.write('The user entered ', fruit_choice)
 
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
